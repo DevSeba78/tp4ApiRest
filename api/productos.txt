@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "escuadra",
+    "price": 150,
+    "image": "url1"
+  },
+  {
+    "id": 2,
+    "title": "cuaderno",
+    "price": 250,
+    "image": "url2"
+  },
+  {
+    "id": 3,
+    "title": "regla",
+    "price": 350,
+    "image": "url3"
+  },
+  {
+    "id": 4,
+    "title": "algo",
+    "price": "100",
+    "url": "https://www.linkedin.com/mwlite/in/sebastian-martin-villarroel-48367034"
+  },
+  {
+    "id": 5,
+    "title": "algo",
+    "price": "100",
+    "url": "https://www.linkedin.com/mwlite/in/sebastian-martin-villarroel-48367034"
+  },
+  {
+    "id": 6,
+    "title": "algo",
+    "price": "101",
+    "url": "https://www.linkedin.com/mwlite/in/sebastian-martin-villarroel-48367034"
+  },
+  {
+    "id": 7,
+    "title": "algo",
+    "price": "101",
+    "url": "https://www.linkedin.com/mwlite/in/sebastian-martin-villarroel-48367034"
+  },
+  {
+    "id": 8,
+    "title": "algo mas",
+    "price": "125",
+    "url": "https://www.linkedin.xom/mwlite/in/sebastian-martin-villarroel-48367034"
+  },
+  {
+    "id": 9,
+    "title": "algo mas",
+    "price": "1256",
+    "url": "https://www.linkedin.xom/mwlite/in/sebastian-martin-villarroel-48367034"
+  },
+  {
+    "id": 10,
+    "title": "vacio",
+    "price": "555",
+    "url": "http://algo.com"
+  },
+  {
+    "id": 11,
+    "title": "vacio",
+    "price": "555",
+    "url": "http://algo.com"
+  },
+  {
+    "id": 12,
+    "title": "vacio",
+    "price": "55569",
+    "url": "http://algo.com"
+  },
+  {
+    "id": 13,
+    "title": "vacio",
+    "price": "55569",
+    "url": "http://algo.com"
+  },
+  {
+    "id": 14,
+    "title": "",
+    "price": "",
+    "url": ""
+  },
+  {
+    "id": 15,
+    "title": "reterret",
+    "price": "345",
+    "url": "http://algo.com.arraa"
+  },
+  {
+    "id": 16,
+    "title": "reterret",
+    "price": "345",
+    "url": "http://algo.com.arraa"
+  }
+]

@@ -11,7 +11,8 @@ const PORT = 8080;
 
 let app = express();
 let router = new Router();
-app.use(express.urlencoded({ extended: true }))
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 router.get('/', (req, res) => {
@@ -43,8 +44,10 @@ router.get('/productos/:id', (req, res,next) => {
 
 
 router.post('/productos', (req, res) => {//controlar que el producto no exista
-    
-    contenedor.save(req.body).then(producto => {
+    console.log(req.body);
+    //res.send("ok");
+    contenedor.save(req.body)
+    .then(producto => {
         res.json(producto);
     }).catch(error => {
         res.send(error);
@@ -52,15 +55,19 @@ router.post('/productos', (req, res) => {//controlar que el producto no exista
 });
 
 router.put('/productos/:id', (req, res) => {
-    contenedor.getByIdPut(req.params.id).then(producto => {
+    let updateProducto = req.body;  
+    console.log("updateProducto", updateProducto);
+    contenedor.update(req.params.id, updateProducto)
+    .then(producto => {
         res.json(producto);
-    })
-   
-  
+    }).catch(error => {
+        res.send(error);
+    });
 });
 
 router.delete('/productos/:id', (req, res) => {
-    contenedor.deleteById(req.params.id).then(producto => {
+    contenedor.deleteById(req.params.id)
+    .then(producto => {
         res.json(producto);
     })
    

@@ -76,23 +76,5 @@
     "title": "vacio",
     "price": "55569",
     "url": "http://algo.com"
-  },
-  {
-    "id": 14,
-    "title": "",
-    "price": "",
-    "url": ""
-  },
-  {
-    "id": 15,
-    "title": "reterret",
-    "price": "345",
-    "url": "http://algo.com.arraa"
-  },
-  {
-    "id": 16,
-    "title": "reterret",
-    "price": "345",
-    "url": "http://algo.com.arraa"
   }
 ]

@@ -34,16 +34,24 @@ class Contenedor{
         }
             
     }
-    async getByIdPut(id){
+    async update(id,updateProducto){
         
         try {
             let respuesta = 'El producto no existe'
             let productos = await this.getProductos();
             if(productos.length > 0){
-                productos.forEach(element => {
-                    element.id == id ? respuesta = element : respuesta;
+               
+                let data = productos.map(element => {
+                    if(element.id == id){
+                        element =  {id: Number(id), ...updateProducto};
+                        
+                    }
+                    return element;
                 });
-                respuesta
+                console.log(data);
+                let resUpdateProducto = JSON.stringify(data, null,2);
+                await fs.promises.writeFile(this.url, resUpdateProducto);
+               respuesta = await this.getProductos();
             }
             return respuesta;
         } catch (error) {
@@ -77,7 +85,7 @@ class Contenedor{
         }
     }
     async deleteById(id){
-        let productos = await this.getAll();
+        let productos = await this.getProductos();
         productos = productos.filter(productoDeleteById => productoDeleteById.id != id);
         let contenidoProducto = JSON.stringify(productos, null, 2);
         await fs.promises.writeFile(`${this.url}`, contenidoProducto);
